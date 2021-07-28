@@ -84,7 +84,7 @@ def test_ThemSP_ThongtinChung():
 
     Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_B_LOCATOR, "255000")
 
-    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_C_LOCATOR, "260000")
+#    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_C_LOCATOR, "260000")
 
     Common.click_Xpath_Locator('//*[@id="bodyContent"]/div/div[1]/div/div/h5')
     Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Save_LOCATOR)
