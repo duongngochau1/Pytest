@@ -56,7 +56,7 @@ def test_ThemSP_ThongtinChung():
     Common.send_keys_ID_Locator(Locators.MPP_Product_Create_Product_Description_LOCATOR, "Đây là sản phẩm 5")
 
     Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Department_LOCATOR)
-    Common.click_Xpath_Locator("//*[@id=\"ddlDepartment_listbox\"]/li")
+    Common.click_Xpath_Locator()
 
     time.sleep(3)
     Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Category_LOCATOR)
