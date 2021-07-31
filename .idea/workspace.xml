@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="698b3f08-1d87-4959-bd52-4f38d940e276" name="Default Changelist" comment="">
+    <list default="true" id="698b3f08-1d87-4959-bd52-4f38d940e276" name="Default Changelist" comment="pytest">
+      <change afterPath="$PROJECT_DIR$/test/Config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_with_Selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_with_Selenium.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627458047741</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pytest">
+      <created>1627543258167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627543258168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,9 +88,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pytest basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="pytest basic" />
+    <MESSAGE value="pytest" />
+    <option name="LAST_COMMIT_MESSAGE" value="pytest" />
   </component>
 </project>

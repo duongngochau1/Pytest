@@ -3,37 +3,15 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
+
 import Data
 from Common import Common
 import Locators
-
-driver = webdriver.Chrome()
-
-@pytest.fixture(autouse="true")
-def chrome_open():
-    global driver
-    driver.implicitly_wait(10)
-    driver.maximize_window()
-    yield
-    time.sleep(10)
-    driver.close()
-    driver.quit()
-    print('Test completed')
-
-
-def loadPage():
-    chrome_open
-    driver.get(Locators.Login_Url)
-    
-def login():
-    Common.send_keys_ID_Locator(Locators.Login_UserName, Data.Login_UserName)
-    Common.send_keys_ID_Locator(Locators.Login_Password, Data.Login_Password)
-    Common.click_ID_Locator(Locators.Login_Button)
-
+import Config
 
 def test_ThemSP_ThongtinChung():
-    loadPage()
-    login()
+    Common.loadPage()
+    Common.login()
     time.sleep(3)
     Common.click_Xpath_Locator(Locators.MSHP_Menu_QLSP_LOCATOR)
 
@@ -45,7 +23,7 @@ def test_ThemSP_ThongtinChung():
     Common.click_ID_Locator(Locators.MPP_Product_Create_Product_Button_LOCATOR)
 
     #điền thông tin SP
-    driver.find_element_by_xpath(Locators.MPP_Product_Create_Product_Type_LOCATOR).click()
+    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Type_LOCATOR)
 
     Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Type_Normal_LOCATOR)
 
