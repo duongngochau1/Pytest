@@ -9,6 +9,7 @@ driver = webdriver.Chrome()
 @pytest.fixture(autouse="true")
 def chrome_open():
     global driver
+    driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.maximize_window()
     yield

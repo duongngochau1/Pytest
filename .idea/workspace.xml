@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="698b3f08-1d87-4959-bd52-4f38d940e276" name="Default Changelist" comment="pytest">
-      <change afterPath="$PROJECT_DIR$/test/Config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_with_Selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_with_Selenium.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

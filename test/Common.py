@@ -6,6 +6,9 @@ import Locators
 class Common():
     def loadPage():
         Config.chrome_open
+
+        Config.driver.maximize_window()
+
         Config.driver.get(Locators.Login_Url)
 
     def login():
