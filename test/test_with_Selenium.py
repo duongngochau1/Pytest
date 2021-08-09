@@ -1,79 +1,44 @@
+import os
 import time
+import sys
 
-from selenium.webdriver.support import expected_conditions as EC
-
-import pytest
-from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.wait import WebDriverWait
-
-
-import Data
-from Common import Common
-import Locators
-import Config
+sys.path.append(os.path.dirname(__file__).replace('test', 'Resource'))
+sys.path.append(os.path.dirname(__file__))
 
 
 def test_ThemSP_ThongtinChung():
     Common.loadPage()
     Common.login()
-    time.sleep(3)
-    Common.click_Xpath_Locator(Locators.MSHP_Menu_QLSP_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MSHP_Menu_QLSP_SP_LOCATOR)
+    Create_Produce_Normal.Click_Menu_Produce()
 
-    time.sleep(2)
-    Common.click_ID_Locator(Locators.MPP_Product_Create_Button_LOCATOR)
-    time.sleep(2)
-    Common.click_ID_Locator(Locators.MPP_Product_Create_Product_Button_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Create_Button()
 
-    time.sleep(3)
-    Config.driver.find_element_by_xpath(Locators.MPP_Product_Create_Product_Type_LOCATOR).click()
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Type_Normal_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Type()
 
-    Common.send_keys_ID_Locator(Locators.MPP_Product_Create_Product_Code_LOCATOR, "SP0010")
+    Create_Produce_Normal.Sendkey_Create_Produce_Code()
 
-    Common.send_keys_ID_Locator(Locators.MPP_Product_Create_Product_Name_LOCATOR, "Sản phẩm 10")
+    Create_Produce_Normal.Sendkey_Create_Produce_Name()
 
-    Common.send_keys_ID_Locator(Locators.MPP_Product_Create_Product_Description_LOCATOR, "Đây là sản phẩm 10")
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Department_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Department_Item1_LOCATOR)
+    Create_Produce_Normal.Sendkey_Create_Produce_Description()
 
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Category_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Category_VATTU_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Department()
 
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Barcode_Type_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Barcode_Code128_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Category()
 
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Tax_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Tax_LI1_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Tab_Price_LOCATOR)
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Unit_Of_Measure_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Barcode_Type()
 
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Unit_Of_Measure_KG_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Tax()
 
-    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Net_Price_LOCATOR,"240000")
-    time.sleep(1)
-    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Sale_Price_LOCATOR, "250000")
-    time.sleep(1)
-    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_A_LOCATOR, "245000")
-    time.sleep(1)
-    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_B_LOCATOR, "255000")
+    Create_Produce_Normal.Click_Create_Produce_Tab_Price()
 
-#    Common.send_keys_Xpath_Locator(Locators.MPP_Product_Create_Product_Price_C_LOCATOR, "260000")
-    time.sleep(1)
-    Common.click_Xpath_Locator('//div[@class="s2-switch"]')
-    time.sleep(1)
-    Common.click_Xpath_Locator(Locators.MPP_Product_Create_Product_Save_LOCATOR)
+    Create_Produce_Normal.Click_Create_Produce_Unit_Of_Measure()
 
+    Create_Produce_Normal.Sendkey_Create_Produce_Net_Price()
 
+    Create_Produce_Normal.Sendkey_Create_Produce_Sale_Price()
 
+    Create_Produce_Normal.Sendkey_Create_Produce_Price_A()
+
+    Create_Produce_Normal.Sendkey_Create_Produce_Price_B()
+
+    Create_Produce_Normal.Click_Create_Produce_Save_Button()

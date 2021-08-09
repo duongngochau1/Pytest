@@ -4,7 +4,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
-driver = webdriver.Chrome()
+
 
 @pytest.fixture(autouse="true")
 def chrome_open():

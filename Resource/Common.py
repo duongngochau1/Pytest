@@ -3,15 +3,13 @@ import Data
 import Locators
 
 
-class Common():
-    def loadPage():
-        Config.chrome_open
-
-        Config.driver.maximize_window()
-
+class Common(Config):
+    def loadPage(self):
+        self.chrome_open
+        self.driver.maximize_window()
         Config.driver.get(Locators.Login_Url)
 
-    def login():
+    def login(self):
         Common.send_keys_ID_Locator(Locators.Login_UserName, Data.Login_UserName)
         Common.send_keys_ID_Locator(Locators.Login_Password, Data.Login_Password)
         Common.click_ID_Locator(Locators.Login_Button)
